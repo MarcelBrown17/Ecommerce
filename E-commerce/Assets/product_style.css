@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* CARD */
+
+
+.card-container{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin-top: 30px !important;
+}
+
+.card{
+padding: 15px 10px;
+box-shadow: 0 0 20px #4623c2e1;
+transition: .4s ease-in;
+margin: 15px;
+border: 1px solid #000000 !important;
+height: 200px;
+width: 400px;
+
+}
+
+.card:hover{
+    background: #2461c2;
+    color: white;
+}
+h3 {
+font-weight: bold;
+color: #2461c2 ;
+margin-top: 10px;
+}
+
+h3:hover{
+    color: white;
+    transition: .4s ease-in;
+}
+
+.card-body{
+    font-weight: 500;
+    font-size: 20px !important;
+}
+
+ .card-container img {
+    width: 380px;
+    height: 250px;
+    justify-content: center !important;
+    align-content:center;
+}
+/* FOOTER */
+
+footer{
+    background-color: #2461c2; 
+    position: relative;
+}
+
+.footer-container{
+    width:100%;
+    margin-top: 80px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 15px 22px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.social-icons a i{
+    font-size: 25px;
+    color: black;
+    opacity: 0,9;
+}
+
+.social-icons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-bottom{
+    background-color: #2461c2;
+    padding: 10px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: rgb(0, 0, 0);
+    .designer{
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin: 0px 5px;;
+        
+    }
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media only screen and(max-width: 400px){
+.card-container{
+    display: flex !important;
+flex-direction: column !important;
+  }
+}
+  @media only screen and(max-width: 400px){
+.card{
+  width: 200px !important;
+  height: 200px !important;
+
+  }
+}
